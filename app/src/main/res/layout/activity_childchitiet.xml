@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/childchitiet">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvlisttheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    <TextView
+        android:id="@+id/tvnoidungtruyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dragon Ball Super là một phần tiếp theo của Dragon Ball Z có cả truyện lẫn phim Thiết kế cốt truyện, khung hình và nhân vật đều được tạo ra bởi Akira Toriyama. Bộ phim sẽ được làm bởi Toie Anime còn manga sẽ được vẽ bởi tác giả DBH - Toyotarou Câu chuyện của Dragon Ball Super diễn ra ngay sau khi chiến đấu với Ma Nhân Bư, cuộc sống ở trái đất lại được hòa bình thêm 1 lần nữa. Sau đó vì nhà gần như hết tiền để chi tiêu Chichi tiền ra lệnh cho Goku phải đi kiếm tiền, và không được phép luyện tập trong thời gian này!! Videl sắp trở thành chị dâu của Goten nên Goten đã đặt ra một cuộc hành trình cùng với TRunks để tìm cho Videl một món quà! Dragon Ball Super sẽ ra mắt vào ngày 05 tháng bảy trên kênh Fuji TV và các kênh khác tại Nhật, và nó sẽ được chiếu vào ngày chủ nhật lúc 09:00 Đây sẽ là bộ phim Dragon Ball mới đầu tiên kể từ lúc Dragon Ball GT được phát sóng từ năm 1996 đến năm 1997. Câu chuyện của anime là thiết lập một vài năm sau khi đánh bại Ma Nhân Bư, khi Trái đất đã trở nên hòa bình một lần nữa. Huyền thoại đã trở lại sau 18 năm vắng mặt!!,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,dhsjhdkajhdskjhkjshkjdshkjfshkjsdhfkjsdhjkdshkjdshkjshkjsdfds,mn,sdmnfsjdnfjsdnfjskdnfsdkjnfksdjfnsdjncds,mns,mdnclksdncklsdnksdnfljndsjfnsdnfdklnflksnfkldsnfkdsnflksndknsdflks dc xm clksdnkldsnfksdnklfsnl"
+        android:textSize="15sp"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Bình luận nổi bật"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10sp"
+            />
+        <TextView
+            android:id="@+id/tvtongbl"
+            android:layout_weight="0.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng 109 bình luận >"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvlistcommentnoibat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+
+</LinearLayout>

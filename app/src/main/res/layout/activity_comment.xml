@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvtentruyencmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nguyệt đạo di giới"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvlistbinhluantruyen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/commentContainer"
+        android:layout_below="@id/tvtentruyencmt"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+    <LinearLayout
+        android:id="@+id/commentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/editTextComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:hint="Nhập bình luận của bạn"
+            android:padding="6dp"
+            android:background="@drawable/search_edit"
+            android:layout_marginRight="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgvsendcomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_send_24"
+            android:padding="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

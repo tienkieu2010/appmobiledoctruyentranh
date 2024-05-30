@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+
+    android:paddingLeft="10dp"
+    android:background="@drawable/leftborder"
+    >
+
+    <ImageView
+        android:id="@+id/imgv_anhuserchild"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/dragonballz"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_tenuserchild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TienKieu"
+            android:textStyle="bold"
+            android:padding="0dp"
+            android:textSize="17sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_noidungcmtchild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nội dung truyện quá hay"
+            android:padding="3dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="2dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/tv_thoigiancmtchild"
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Thời gian cmt"/>
+            <TextView
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/comment"
+                android:id="@+id/tv_soluotcmtrep"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

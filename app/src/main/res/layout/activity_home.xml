@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MainActivity">
+
+    <!-- Thanh "Đề xuất" ở trên cùng -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <!-- Dấu 3 gạch để mở menu ở bên trái -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:text="Đề xuất"
+            android:textStyle="bold" />
+
+        <!-- Hình user ở bên phải -->
+        <ImageView
+            android:id="@+id/img_Search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <!-- ScrollView để cuộn nội dung bên dưới -->
+    <ScrollView
+        android:id="@+id/content_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Truyện mới cập nhật"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:padding="1dp"
+                android:drawableLeft="@drawable/baseline_brightness_7_24"
+                android:drawablePadding="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/grvlisttruyen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="BXH HOT"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="0dp"
+                android:drawableRight="@drawable/baseline_local_fire_department_24" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvlisttruyenbxh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3"
+                android:paddingBottom="60dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

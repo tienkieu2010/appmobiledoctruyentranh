@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Circle background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" /> <!-- Màu nền của hình tròn bên trong -->
+            <size
+                android:width="300dp"
+                android:height="300dp" /> <!-- Kích thước của hình tròn bên trong -->
+        </shape>
+    </item>
+
+    <!-- Outer circle (border) -->
+    <item>
+        <shape android:shape="oval">
+            <stroke
+                android:width="10dp"
+                android:color="#696969" /> <!-- Điều chỉnh độ rộng và màu sắc của border -->
+            <size
+                android:width="320dp"
+                android:height="320dp" /> <!-- Kích thước của hình tròn bên ngoài -->
+        </shape>
+    </item>
+</layer-list>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Apptruyentranh"
+        android:usesCleartextTraffic="true"
+
+        tools:targetApi="31">
+
+        <activity
+            android:name=".views.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.search_activity" />
+        <activity android:name=".views.Chitiettruyen_Activity" />
+        <activity android:name=".views.Childchitiet_activity" />
+        <activity android:name=".views.Chapter_Activity" />
+        <activity android:name=".views.Comment_Activity" />
+        <activity android:name=".views.CommentRepliesActivity" />
+        <activity android:name=".views.LoginActivity" />
+        <activity android:name=".views.Sign_up_Activity" />
+        <activity android:name=".views.KhamphaActivity" />
+        <activity android:name=".views.HomeActivity" />
+        <activity android:name=".views.User_profile_more_Activity" />
+        <activity android:name=".views.User_profile_edit_Activity" />
+
+
+    </application>
+
+</manifest>

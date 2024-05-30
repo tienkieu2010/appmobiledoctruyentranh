@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+     <!-- Điều chỉnh độ rộng và màu của đường viền -->
+    <solid android:color="#87CEEB" /> <!-- Màu nền -->
+    <corners android:radius="8dp" /> <!-- Điều chỉnh độ cong của góc -->
+</shape>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="3dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="105dp"
+        android:layout_height="155dp"
+        android:padding="0dp"
+        >
+
+    <ImageView
+        android:id="@+id/imgAnhbiatruyen"
+        android:layout_width="105dp"
+        android:layout_height="155dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/dragonballz"
+        android:background="@drawable/search_edit"
+        android:adjustViewBounds="true"
+
+
+        />
+    <TextView
+        android:id="@+id/txvTenChap"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#A8000000"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="Chương 234"
+        android:textSize="11dp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvxTenTruyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:gravity="left"
+        android:text="Dragon ball Z"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+</LinearLayout>

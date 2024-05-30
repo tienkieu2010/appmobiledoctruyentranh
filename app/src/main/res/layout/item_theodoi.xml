@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_user_info"
+    android:padding="15dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="95dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dragonballz"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <TextView
+            android:id="@+id/textViewTentruyen"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            android:text="Dragonball"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTacgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+
+            android:layout_marginTop="6dp"
+            android:text="Tác giả:"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy theo dõi"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="14dp"
+            android:drawableStart="@drawable/baseline_close_24"
+            android:background="#98FB98"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
